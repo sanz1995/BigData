@@ -1,15 +1,11 @@
-Descargar el zip de ratings de https://grouplens.org/datasets/movielens/ 
+Descargar el zip de ratings de 10M de https://grouplens.org/datasets/movielens/ 
 
-Dependiendo del tamaño tienen un formato u otro.
-
-La primera linea es la descripción y hay que quitarla con "sed -i '1d' ratings.csv"
-
-Para cambiar los separadores a tabulaciones hay que ejecutar "sed -i 's/,/\t/g' ratings.csv"
-
-Por último cambiar el nombre a ratings.tsv y moverlo a p3/recomendador/data/movielens
+moverlo a p3/recomendador/data/movielens
 
 ------------------
 
 Importar el proyecto desde eclipse y añadir el jar mysql-connector.
+
+Ejecutar la clase MovieLens10MDataPreparator
 
 Ejecutar la clase Main

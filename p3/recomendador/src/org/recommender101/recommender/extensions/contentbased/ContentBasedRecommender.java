@@ -51,12 +51,12 @@ public class ContentBasedRecommender extends AbstractRecommender {
 	/**
 	 * Where we expect the feature (TF-IDF or lsa weight) files
 	 */
-	public String featureWeightFile = "tfidf.txt";
+	public String featureWeightFile = "tf-idf-vectors.txt";
 	
 	/**
 	 * Where we expect the cosine similarities file
 	 */
-	public String cosineSimilaritiesFile = "cos-sim-vectors.zip";
+	public String cosineSimilaritiesFile = "cos-sim-vectors.txt";
 	
 	// The list of words
 	List<String> wordlist;

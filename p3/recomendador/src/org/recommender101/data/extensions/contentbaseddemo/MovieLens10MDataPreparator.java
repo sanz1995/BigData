@@ -69,7 +69,7 @@ public class MovieLens10MDataPreparator {
 	public void run() throws Exception {
 		// Get the zip file
 		System.out.println("Downloading data from grouplens.org (64mb). This may take some time");
-		Utilities101.downloadFile(TARGET_DIRECTORY, TEMP_FILE, DOWNLOAD_URL);
+		//Utilities101.downloadFile(TARGET_DIRECTORY, TEMP_FILE, DOWNLOAD_URL);
 		System.out.println("Data has been downloaded, extracting zip file");
 		// Extract the ratings file
 		Utilities101.extractFileFromZip(TARGET_DIRECTORY, TEMP_FILE, FILE_TO_EXTRACT, TARGET_FILE);
@@ -85,10 +85,11 @@ public class MovieLens10MDataPreparator {
 		// create the tf-idf vectors
 		System.out.println("Creating TF-IDF vectors from content information, creating temporary files");
 		Set<String> filenames = runFileSplitter(TARGET_DIRECTORY, CONTENT_FILE, TMP_DIRECTORY);
-//		System.out.println("Created " + filenames.size() + " temporary files");
+		System.out.println("Created " + filenames.size() + " temporary files");
 		System.out.println("Creating output files containing tfidf vectors and wordlists");
 		generateWordVectorsAndWordList(filenames,TMP_DIRECTORY,WORDLIST_FILENAME,TF_IDF_FILENAME, TARGET_DIRECTORY, 20,1000,true,"german");
 		System.out.println("Created tf-idf vectors");
+		
 	}
 	
 	

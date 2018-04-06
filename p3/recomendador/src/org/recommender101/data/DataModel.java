@@ -61,6 +61,8 @@ public class DataModel implements Serializable {
 	
 	// =====================================================================================
 
+	
+
 	/**
 	 * Stores a rating in the data model
 	 * @param user the user

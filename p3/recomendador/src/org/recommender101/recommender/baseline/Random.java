@@ -30,8 +30,8 @@ public class Random extends AbstractRecommender{
 		
 		//if we don't want to recommend items already known to the user, we have to filter these here
 		if(hideKnownItems){
-			Set<Rating> ratingsOfUser = getDataModel().getRatingsOfUser(user);
 			
+			Set<Rating> ratingsOfUser = getDataModel().getRatingsOfUser(user);
 			for (Rating rating : ratingsOfUser) {
 				itemSet.remove(rating.item);
 			}

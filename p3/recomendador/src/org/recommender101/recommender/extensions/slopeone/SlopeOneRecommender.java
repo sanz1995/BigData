@@ -36,7 +36,6 @@ public class SlopeOneRecommender extends AbstractRecommender {
 //		System.out.println("Predicting one");
 		float prediction = 0;
 		int frequency = 0;
-		System.out.println(dataModel);
   	// Go through all items the user has rated
   	for (Rating rj : dataModel.getRatingsOfUser(user)) {
   		// get the differences from the rating matrix

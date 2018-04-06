@@ -930,7 +930,7 @@ public class Utilities101 {
 				// delete unnecessary stuff
 				File zipfile = new File(targetDirectory + sourceFile);
 				if (zipfile.exists()) {
-					zipfile.delete();
+					//zipfile.delete();
 				}
 				
 				return true;

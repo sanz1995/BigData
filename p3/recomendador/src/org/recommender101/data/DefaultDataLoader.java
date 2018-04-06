@@ -23,7 +23,7 @@ import org.recommender101.tools.Utilities101;
 public class DefaultDataLoader  {
 
 	// A default location
-	protected String filename = "data/movielens/ratings.txt";
+	protected String filename = "data/movielens/u.data";
 	protected int minNumberOfRatingsPerUser = -1;
 	protected int minNumberOfRatingsPerItem = -1;
 	protected int sampleNUsers = -1;
